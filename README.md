@@ -1,19 +1,30 @@
-# fraud-etl-bank
-
 # Overview
 This Python project automates the ETL process for banking data. 
+
 It includes scripts for extracting data from source files, transforming and loading it into staging and dimensional tables in a PostgreSQL database and performing fraud detection analysis.
+
 This project implements a star schema for DWH:
+
   Facts:
-    - deaian.grsm_dwh_fact_transactions
-    - deaian.grsm_dwh_fact_passport_blacklist
+  
+    deaian.grsm_dwh_fact_transactions
+    
+    deaian.grsm_dwh_fact_passport_blacklist
+    
   Dims:
-    - deaian.grsm_dwh_dim_terminals
-    - deaian.grsm_dwh_dim_cards
-    - deaian.grsm_dwh_dim_accounts
-    - deaian.grsm_dwh_dim_clients
+  
+    deaian.grsm_dwh_dim_terminals
+    
+    deaian.grsm_dwh_dim_cards
+    
+    deaian.grsm_dwh_dim_accounts
+    
+    deaian.grsm_dwh_dim_clients
+    
   Store:
-    - deaian.grsm_rep_fraud
+  
+    deaian.grsm_rep_fraud
+    
 
 # Project Structure:
 * source: contains source files for transactions, terminals, and passport blacklists.
