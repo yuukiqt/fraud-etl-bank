@@ -27,15 +27,15 @@ This project implements a star schema for DWH:
     
 
 # Project Structure:
-* source: contains source files for transactions, terminals, and passport blacklists.
-* sql_scripts: contains SQL scripts for creating tables, inserting data, and detecting fraud events.
-* archive: archived source files are stored here.
-* main.ddl: DDL script for creating database tables.
-* main.cron: crontab process runs at 0:22 every day
+* `source`: contains source files for transactions, terminals, and passport blacklists.
+* `sql_scripts`: contains SQL scripts for creating tables, inserting data, and detecting fraud events.
+* `archive`: archived source files are stored here.
+* `main.ddl`: DDL script for creating database tables.
+* `main.cron`: crontab process runs at 0:22 every day
 
 # Usage:
 1. Clone the repository to your local machine.
-2. Install required python libraries: pip install psycopg2 pandas.
+2. Install required python libraries: `pip install psycopg2 pandas`
 3. Set up your PostgreSQL database and update the connection details in the Python script.
 4. Run the python script(main.py) to automate the data loading and fraud detection process.
 
