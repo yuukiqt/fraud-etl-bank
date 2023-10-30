@@ -31,6 +31,9 @@ This project implements a star schema for DWH:
 
 # Fraud Detection Criteria:
 Event Type 1: expired or blocked passports.
+
 Event Type 2: invalid contracts.
+
 Event Type 3: transactions in different cities within an hour. (get only last transaction)
+
 Event Type 4: three transactions within 20 minutes, each with a decreasing amount. (get only last transaction)
