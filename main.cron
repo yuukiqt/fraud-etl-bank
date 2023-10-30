@@ -1,0 +1,4 @@
+#!/bin/bash
+# Run ETL proccess daily at 0:22
+
+22 0 * * * python3 /home/deaian/grsm/project/main.py
